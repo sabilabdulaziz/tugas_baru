@@ -42,7 +42,7 @@
                </div>
                <div class="row" id="link">
                 <div class="col">
-                    <p id="text">Tidak punya akun ? <a href="#">Daftar disini !</a></p>
+                    <p id="text">Tidak punya akun ? <a href="{{route('daftar')}}">Daftar disini !</a></p>
                 </div>
                </div>
             </form>
