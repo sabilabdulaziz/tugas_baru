@@ -17,8 +17,8 @@
             @csrf
             <div class="row" id="b-1">
                 <div class="col">
-                    <input type="text" name="name" id="username" placeholder="username" class="form-control @error('username')is-invalid @enderror" value="{{old('username')}}">
-                   @error('username')
+                    <input type="text" name="name" id="username" placeholder="username" class="form-control @error('name')is-invalid @enderror" value="{{old('username')}}">
+                   @error('name')
                     <div  class="invalid-feedback">
                         {{$message}}
                     </div>
