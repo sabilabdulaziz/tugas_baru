@@ -1,0 +1,236 @@
+
+.img{
+    object-fit: contain;
+    display: block;
+    width:97.8%;
+}
+
+.ico{
+    margin-bottom:3%;
+
+    width:150px;
+    float: left;
+    margin-right:0.8rem;
+}
+
+.j-t{
+    padding-top:10px;
+}
+.judul{
+    display: block;
+    margin-top:10%;
+}
+
+#heading__5{
+    display: block;
+    margin-left:0;
+    width:54%;
+    margin-top:20%;
+}
+
+#form__1{
+    justify-content: center;
+    width:80%;
+
+    margin-left: 0;
+}
+#email{
+
+    width:383px;
+}
+#form{
+    display: block;
+    margin-top:0.3rem;
+}
+#sandi{
+
+    width:383px;
+}
+.form-label{
+    margin-left:1.4rem;
+}
+#f_1{
+    display: block;
+    margin-top:1.5rem;
+}
+#f_2{
+    display: block;
+    margin-top:2rem;
+}
+.link-primary{
+    display: block;
+    margin-left:60%
+}
+#kirim{
+    width:383px;
+}
+#link{
+    display: block;
+    margin-top:3rem;
+    margin-left: 18%;
+    font-size: 12px;
+}
+
+/* ini untuk bagian daftar isi */
+.judul-1{
+    margin-top:2rem;
+}
+.icon{
+
+    width:150px
+}
+#heading__5_1{
+
+    margin-top:2rem;
+    text-align: center;
+}
+#username{
+    width: 430px;
+}
+#b-1{
+    margin-top:4%;
+    margin-left:17%;
+}
+#e{
+    margin-top:2rem;
+    margin-left:17%;
+}
+#email-1{
+
+    width: 430px;
+}
+#form-page{
+    margin-left:13%;
+}
+#pw-n{
+    width: 430px;
+    margin-top:2rem;
+    margin-left:17%;
+}
+#pw{
+    font-weight: bold;
+    font-size: 11px;
+}
+#fer{
+    width:230px;
+}
+#bag-2{
+
+    margin-right:29%;
+}
+#bag-1{
+    margin-left:18%;
+}
+#kirim-1{
+    width:100px;
+}
+#fer-page{
+    margin-top:3rem;
+}
+#radio{
+    padding-top:5px;
+}
+#radio-button{
+    margin-top:10px;
+    margin-left:18%;
+}
+#daftar{
+    width: 430px;
+    margin-left:12%;
+    margin-top:1rem;
+}
+/*ini bagian halaman login */
+@media (max-width:376px) and (min-width:320px){
+
+    .img{
+        display: none;
+    }
+    #p{
+        margin: 0;
+
+    }
+    #heading__5{
+        margin-top:100px;
+
+        margin-left:8%;
+        width:330px;
+    }
+    #email{
+        width:330px;
+    }
+    #sandi{
+        width:330px;
+    }
+    .link-primary{
+        width:120px;
+        margin-left:84%;
+
+    }
+    #kirim{
+        width:330px;
+    }
+    #link{
+        width: 100%;
+
+        margin-left:26%;
+    }
+}
+@media (max-width:321px){
+    #heading__5{
+        margin-left:0;
+        font-size: 9px;
+    }
+    #email{
+        width:300px;
+    }
+    #sandi{
+        width:300px;
+    }
+    #kirim{
+        width:300px;
+    }
+    #link{
+        margin-top: 14px;
+    }
+}
+
+@media (max-width:431px) and (min-width:390px){
+    .img{
+        display:none;
+    }
+    .judul{
+
+        margin-left:12px;
+    }
+    #heading__5{
+        margin-top:5rem;
+        margin-left:12%;
+        width:320px;
+    }
+    .link-primary{
+        margin-left:86%;
+        width: 120px;
+    }
+    #link{
+        width: 225px;
+        margin-left: 30%;
+
+    }
+}
+@media (max-width:391px){
+    #email{
+        width: 350px;;
+    }
+    #sandi{
+        width: 350px;;
+    }
+    #kirim{
+        width:350px;
+    }
+    #link{
+
+        width: 210px;
+        margin-left: 25%;
+    }
+}
+/* di bawah untuk bagian daftar*/
