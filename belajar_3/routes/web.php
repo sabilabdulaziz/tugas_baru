@@ -20,5 +20,6 @@ Route::get('/', function () {
 });
 
 Route::get('/masuk',[LoginController::class,'masuk'])->name('masuk');
+Route::post('/proses-masuk',[LoginController::class,'proses_masuk'])->name('proses-masuk');
 Route::get('/daftar',[RegisterController::class,'daftar'])->name('daftar');
 Route::post('/proses-daftar',[RegisterController::class,'proses_daftar'])->name('proses-daftar');

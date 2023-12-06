@@ -21,7 +21,8 @@
             <h5>Selamat datang di Entersetream</h5>
            </div>
            <div class="container" id="form__1">
-            <form action="#" method="post" id="form">
+            <form action="{{route('proses-masuk')}}" method="post" id="form">
+                @csrf
                <div class="row" id="f_1">
                 <div class="col">
                     <label for="email" class="form-label">Login</label>
@@ -37,7 +38,7 @@
                </div>
                <div class="row" id="f_1">
                 <div class="col">
-                    <input type="submit" name="kirim" id="kirim" class="btn btn-primary" value="masuk">
+                    <input type="submit" id="kirim" class="btn btn-primary" value="masuk">
                 </div>
                </div>
                <div class="row" id="link">
