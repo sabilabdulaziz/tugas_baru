@@ -32,7 +32,7 @@
                <div class="row" id="f_2">
                 <div class="col">
                     <label for="sandi" class="form-label">sandi</label>
-                    <input type="password" name="sandi" id="sandi" class="form-control" placeholder="sandi">
+                    <input type="password" name="password" id="sandi" class="form-control" placeholder="sandi">
                     <a href="#" class="link-primary">Lupa password</a>
                 </div>
                </div>

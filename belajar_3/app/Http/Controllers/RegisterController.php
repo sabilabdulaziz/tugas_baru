@@ -10,7 +10,7 @@ class RegisterController extends Controller
 {
     //ini untuk proses masuk nya
     public function daftar(){
-        return view('Login-Register-Logout.register');
+        return view('auth.register');
     }
     //akhir dari proses masuk
 
@@ -29,7 +29,7 @@ class RegisterController extends Controller
        $data =[
         'name' => $request->name,
         'email' => $request->email,
-        'password' => Hash::make($request->password)
+        'password' => bcrypt($request->password)
       ];
       //ini akhir dari validasi datanya
 
