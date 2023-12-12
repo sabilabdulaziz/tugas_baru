@@ -238,3 +238,30 @@
 
 
 /*bagian verify */
+
+#card{
+    margin-top:2rem;
+    border-radius: 7px;
+    width:39rem;
+    background-color: rgb(225, 225, 225);
+    padding-bottom:2rem;
+}
+#ic{
+    margin-top:5rem;
+    margin-left:42%;
+    width:200px;
+}
+#heading-1{
+    padding-top:2rem;
+    text-align: center;
+}
+#Email{
+    margin-top:1.5rem;
+    margin-left:40px;
+    width: 510px;
+}
+#send-mail{
+    margin-top:1.5rem;
+    width: 250px;
+    margin-left:10rem;
+}

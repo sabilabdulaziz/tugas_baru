@@ -16,13 +16,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/masuk',[LoginController::class,'masuk'])->name('masuk');
+
+Route::get('/masuk',[LoginController::class,'masuk'])->name('login');
 Route::post('/proses-masuk',[LoginController::class,'proses_masuk'])->name('proses-masuk');
 Route::get('/daftar',[RegisterController::class,'daftar'])->name('daftar');
 Route::post('/proses-daftar',[RegisterController::class,'proses_daftar'])->name('proses-daftar');
 
-Route::get('/verifikasi',[verifyMailController::class,'verifikasi'])->name('verifikasi');
+Route::get('/email/verification',[verifyMailController::class,'notice'])->middleware('auth')->name('verification.notice');
+Route::get('/email/verification/{id}/{hash}',[verifyMailController::class,'verify'])->middleware(['auth','signed'])->name('verification.verify');
+Route::middleware('auth')->group(function(){
+    Route::get('/', function () {
+        return view('welcome');
+    })->name('welcome');
+});

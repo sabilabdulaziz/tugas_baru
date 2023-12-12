@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
@@ -19,7 +20,7 @@ class RegisterController extends Controller
         //ini untuk ngefalidasi jika user tidak menginputkan salah satu inputan dan ngefalidasi jika user salah memasukan email
        $request->validate([
         'name' => 'required',
-        'email' => 'required|email:dns',
+        'email' => 'required|email:dns|unique:users',
         'password' => 'required|min:6|max:12'
 
        ]);
@@ -34,10 +35,13 @@ class RegisterController extends Controller
       //ini akhir dari validasi datanya
 
       //ini untuk mengirimkan data user baru ke database
-      User::create($data);
+      $user = User::create($data);
       //ini akhir dari pengiriman datanya
 
-      //ini untuk mengembalikan user ke halaman login
-      return redirect()->route('masuk')->with('succes','sip akun berhasil terdaftarkan');
+      event(new Registered($user));
+
+      auth()->login($user);
+
+      return redirect()->route('verification.notice');
     }
 }
