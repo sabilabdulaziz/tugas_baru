@@ -408,11 +408,11 @@
                         </div>
                     </div>
                     <div class="product__pagination">
-                        <a href="./categories.html">1</a>
-                        <a href="./categories2.html">2</a>
-                        <a href="./categories3.html">3</a>
-                        <a href="./categories4.html" class="current-page">4</a>
-                        <a href="./categories5.html">5</a>
+                        <a href="{{route('kat1')}}">1</a>
+                        <a href="{{route('kat2')}}">2</a>
+                        <a href="{{route('kat3')}}">3</a>
+                        <a href="{{route('kat4')}}" class="current-page">4</a>
+                        <a href="{{route('kat5')}}">5</a>
                         <a href="#"><i class="fa fa-angle-double-right"></i></a>
                     </div>
                 </div>
