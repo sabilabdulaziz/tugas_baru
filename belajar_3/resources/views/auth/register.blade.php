@@ -5,19 +5,19 @@
     <link rel="stylesheet" href="./style/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign up page</title>
+    <title>Sign up page</title>
 </head>
 <body>
     <div class="container"><div class="judul-1"> <img src="./image/Picsart_23-11-30_01-19-10-753.png" alt="icon" class="icon"></div></div>
     <div class="container">
-        <h5 id="heading__5_1">silahkan anda mendaftar melalui form dibawah ini</h5>
+        <h5 id="heading__5_1">Silahkan anda mendaftar melalui form dibawah ini</h5>
     </div>
     <div class="container" id="form-page">
         <form action="{{route('proses-daftar')}}" method="post">
             @csrf
             <div class="row" id="b-1">
                 <div class="col">
-                    <input type="text" name="name" id="username" placeholder="username" class="form-control @error('name')is-invalid @enderror" value="{{old('username')}}">
+                    <input type="text" name="name" id="username" placeholder="Username" class="form-control @error('name')is-invalid @enderror" value="{{old('name')}}">
                    @error('name')
                     <div  class="invalid-feedback">
                         {{$message}}
@@ -27,7 +27,7 @@
             </div>
             <div class="row" id="e">
                 <div class="col">
-                    <input type="text" name="email" id="email-1"placeholder="email" class="form-control @error('email')is-invalid @enderror" value="{{old('email')}}">
+                    <input type="text" name="email" id="email-1"placeholder="Email" class="form-control @error('email')is-invalid @enderror" value="{{old('email')}}">
                     @error('email')
                     <div  class="invalid-feedback">
                         {{$message}}
@@ -37,8 +37,8 @@
             </div>
             <div class="row" id="pw-n">
                 <div class="col">
-                    <label for="password" class="form-label" id="pw">8-20 karakter dari minimal 2 kategori: huruf, angka, karakter khusus.</label>
-                    <input type="password" name="password" id="password" placeholder="masukan password baru" class="form-control @error('password')is-invalid @enderror">
+                    <label for="password" class="form-label" id="pw">8-20 Karakter dari minimal 2 kategori: huruf, angka, karakter khusus.</label>
+                    <input type="password" name="password" id="password" placeholder="Masukan password baru" class="form-control @error('password')is-invalid @enderror">
                     @error('password')
                     <div  class="invalid-feedback">
                         {{$message}}
@@ -48,7 +48,7 @@
             </div>
             <div class="row" id="pw-n">
                 <div class="col">
-                    <input type="password" name="rtype_password" id="retype_password" placeholder="masukan ulang password" class="form-control  @error('rtype_password')is-invalid @enderror">
+                    <input type="password" name="rtype_password" id="Retype_password" placeholder="masukan ulang password" class="form-control  @error('rtype_password')is-invalid @enderror">
                     @error('rtype_password')
                     <div  class="invalid-feedback">
                         {{$message}}

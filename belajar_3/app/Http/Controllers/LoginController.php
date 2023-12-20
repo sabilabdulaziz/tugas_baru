@@ -19,10 +19,10 @@ class LoginController extends Controller
             'password' => 'required|min:6|max:12'
         ]);
         if(Auth::attempt($data)){
-            return redirect()->route('welcome')->with('succes','kamu berhasil masuk');
+            return redirect()->route('rumah')->with('succes','kamu berhasil masuk');
         }
         else{
-            return back();
+            return back()->with('eror','email atau password salah');
         }
     }
 

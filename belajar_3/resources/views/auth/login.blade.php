@@ -17,8 +17,10 @@
             <div class="judul"> <img src="./image/Picsart_23-11-30_01-19-10-753.png" alt="ico" class="ico"></div>
            </div>
            <div class="container" id="heading__5">
-
             <h5>Selamat datang di Entersetream</h5>
+            @if (session('eror'))
+
+            @endif
            </div>
            <div class="container" id="form__1">
             <form action="{{route('proses-masuk')}}" method="post" id="form">
@@ -26,14 +28,25 @@
                <div class="row" id="f_1">
                 <div class="col">
                     <label for="email" class="form-label">Login</label>
-                    <input type="text" name="email" id="email" class="form-control" placeholder="username or phone number">
+                    <input type="text" name="email" id="email" class="form-control @error('email')is-invalid @enderror" placeholder="username or phone number">
+                    @error('email')
+                    <div  class="invalid-feedback">
+                        {{$message}}
+                    </div>
+                   @enderror
+                </div>
                 </div>
                </div>
                <div class="row" id="f_2">
                 <div class="col">
                     <label for="sandi" class="form-label">sandi</label>
-                    <input type="password" name="password" id="sandi" class="form-control" placeholder="sandi">
-                    <a href="#" class="link-primary">Lupa password</a>
+                    <input type="password" name="password" id="sandi" class="form-control  @error('password')is-invalid @enderror" placeholder="sandi">
+                    @error('password')
+                    <div  class="invalid-feedback">
+                        {{$message}}
+                    </div>
+                   @enderror
+                    <a href="{{route('lupa-pw')}}" class="link-primary">Lupa password</a>
                 </div>
                </div>
                <div class="row" id="f_1">

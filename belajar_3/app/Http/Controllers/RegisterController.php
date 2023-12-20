@@ -21,7 +21,8 @@ class RegisterController extends Controller
        $request->validate([
         'name' => 'required',
         'email' => 'required|email:dns|unique:users',
-        'password' => 'required|min:6|max:12'
+        'password' => 'required|min:6|max:12',
+        'rtype_password' => 'required|same:password'
 
        ]);
        // ini akhir dari validasi datanya

@@ -1,0 +1,35 @@
+.content{
+    border-radius: 15px;
+    width: 700px;
+    box-shadow: 2px 3px rgb(188, 188, 188);
+    margin-left:15rem;
+    background-color: rgb(232, 232, 232);
+}
+
+#password{
+    margin-left:25%;
+    width:320px;
+}
+#form-label{
+    margin-left:26%;
+    margin-top:8px;
+}
+
+#b-2{
+    padding-bottom: 14px ;
+}
+#ico{
+    margin-bottom:2%;
+    width: 230px;
+    margin-left:37%;
+    margin-top:10%;
+}
+
+#send{
+    margin-left:25%;
+    width:320px;
+    margin-top:3%;
+}
+#b-1{
+    padding-top:2%;
+}

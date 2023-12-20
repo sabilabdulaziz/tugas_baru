@@ -16,4 +16,8 @@ class verifyMailController extends Controller
         return redirect()->route('welcome');
     }
 
+    public function expired(Request $request){
+        
+    }
+
 }

@@ -108,4 +108,28 @@ return [
 
     'password_timeout' => 10800,
 
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | reseting email
+    |--------------------------------------------------------------------------
+    */
+
+    'verification' => [
+        'enabled' => true,
+        'email' => [
+            'subject' => 'Verifikasi Email',
+            'from' => [
+                'address' => 'no-reply@example.com',
+                'name' => 'Laravel',
+            ],
+        ],
+        'expiry' => [
+            'minutes' => 1,
+        ],
+    ],
+
+
 ];
+
