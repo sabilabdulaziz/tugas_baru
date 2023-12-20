@@ -50,6 +50,38 @@ Route::middleware('auth')->group(function(){
         return view('login.categories5');
     })->name('kat5');
 
+    Route::get('/nonton',function(){
+        return view('login.anime-watching');
+    })->name('nt1');
+
+    Route::get('/nonton',function(){
+        return view('login.anime-watching2');
+    })->name('nt2');
+
+    Route::get('/nonton',function(){
+        return view('login.anime-watching3');
+    })->name('nt3');
+
+    Route::get('/nonton',function(){
+        return view('login.anime-watching4');
+    })->name('nt4');
+
+    Route::get('/nonton',function(){
+        return view('login.anime-watching5');
+    })->name('nt5');
+
+    Route::get('/detil',function(){
+        return view('login.anime-details');
+    })->name('detil-anime');
+
+    Route::get('/blog-detils',function(){
+        return view('login.blog');
+    })->name('blog');
+
+    Route::get('/blog-detil',function(){
+        return view('login.blog-details');
+    })->name('blog-detil');
+
 });
 
 Route::get('/forgot-password',[ForgotPassword::class,'forgot'])->name('lupa-pw');
@@ -57,6 +89,12 @@ Route::get('/forgot-password',[ForgotPassword::class,'forgot'])->name('lupa-pw')
 
 
 Route::middleware('guest')->group(function(){
+    Route::get('/masuk',[LoginController::class,'masuk'])->name('login');
+    Route::post('/proses-masuk',[LoginController::class,'proses_masuk'])->name('proses-masuk');
+
+    Route::get('/daftar',[RegisterController::class,'daftar'])->name('daftar');
+    Route::post('/proses-daftar',[RegisterController::class,'proses_daftar'])->name('proses-daftar');
+
     Route::get('/',function (){
         return view('anime.index');
     })->name('home');
@@ -83,7 +121,7 @@ Route::middleware('guest')->group(function(){
 
     Route::get('/blog',function(){
         return view('anime.blog');
-    })->name('blog');
+    })->name('blog1');
 
     Route::get('/anime-details',function(){
         return view('anime.anime-details');
@@ -92,6 +130,25 @@ Route::middleware('guest')->group(function(){
     Route::get('/watch',function(){
         return view('anime.anime-watching');
     })->name('tonton');
+
+    Route::get('/watch2',function(){
+        return view('anime.anime-watching2');
+    })->name('tonton2');
+
+    Route::get('/watch3',function(){
+        return view('anime.anime-watching3');
+    })->name('tonton3');
+
+    Route::get('/watch4',function(){
+        return view('anime.anime-watching4');
+    })->name('tonton4');
+
+
+    Route::get('/watch5',function(){
+        return view('anime.anime-watching5');
+    })->name('tonton5');
+
+
 
     Route::get('/blog-detil',function(){
         return view('anime.blog-details');

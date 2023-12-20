@@ -91,7 +91,7 @@
         </div>
     </div>
     <!-- Breadcrumb End -->
-    
+
     <!-- Anime Section Begin -->
     <section class="anime-details spad">
         <div class="container">
@@ -109,11 +109,11 @@
                         <div class="section-title">
                             <h5>List Name</h5>
                         </div>
-                        <a href="./anime-watching.html">Ep 01</a>
-                        <a class="active" href="./anime-watching2.html">Ep 02</a>
-                        <a href="./anime-watching3.html">Ep 03</a>
-                        <a href="./anime-watching4.html">Ep 04</a>
-                        <a href="./anime-watching5.html">Ep 05</a>
+                        <a href="{{route('tonton')}}">Ep 01</a>
+                        <a class="active" href="{{route('tonton2')}}">Ep 02</a>
+                        <a href="{{route('tonton3')}}">Ep 03</a>
+                        <a href="{{route('tonton4')}}">Ep 04</a>
+                        <a href="{{route('tonton5')}}">Ep 05</a>
                     </div>
                 </div>
             </div>
