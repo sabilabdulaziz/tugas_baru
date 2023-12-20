@@ -3,7 +3,6 @@
 use App\Http\Controllers\ForgotPassword;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\verifyMailController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,8 +24,7 @@ Route::post('/proses-masuk',[LoginController::class,'proses_masuk'])->name('pros
 Route::get('/daftar',[RegisterController::class,'daftar'])->name('daftar');
 Route::post('/proses-daftar',[RegisterController::class,'proses_daftar'])->name('proses-daftar');
 
-Route::get('/email/verification',[verifyMailController::class,'notice'])->middleware('auth')->name('verification.notice');
-Route::get('/email/verification/{id}/{hash}',[verifyMailController::class,'verify'])->middleware(['auth','signed'])->name('verification.verify');
+
 Route::middleware('auth')->group(function(){
     Route::get('/home', function () {
         return view('anime.index');
