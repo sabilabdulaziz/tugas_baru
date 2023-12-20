@@ -39,10 +39,6 @@ class RegisterController extends Controller
       $user = User::create($data);
       //ini akhir dari pengiriman datanya
 
-      event(new Registered($user));
-
-      auth()->login($user);
-
-      return redirect()->route('verification.notice');
+      return redirect()->route('home');
     }
 }
