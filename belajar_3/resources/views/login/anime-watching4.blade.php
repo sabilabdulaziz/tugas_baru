@@ -7,7 +7,7 @@
     <meta name="keywords" content="Anime, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Anime | Template</title>
+    <title>EnterStream</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -33,12 +33,12 @@
 
     <!-- Header Section Begin -->
     <header class="header">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-2">
                     <div class="header__logo">
                         <a href="./index.html">
-                            <img src="img/Logos3.png" alt="" width="175" height="27">
+                            <img src="img/Logos3.png" alt="Logo"  width="175" height="27">
                         </a>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
                     <div class="header__nav">
                         <nav class="header__menu mobile-menu">
                             <ul>
-                                <li><a href="./index.html">Homepage</a></li>
+                                <li class="active"><a href="./index.html">Homepage</a></li>
                                 <li><a href="./categories.html">Categories <span class="arrow_carrot-down"></span></a>
                                     <ul class="dropdown">
                                         <li><a href="./categories.html">Categories</a></li>
@@ -75,69 +75,51 @@
     </header>
     <!-- Header End -->
 
-    <!-- Normal Breadcrumb Begin -->
-    <section class="normal-breadcrumb set-bg" data-setbg="img/normal-breadcrumb.jpg">
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="normal__breadcrumb__text">
-                        <h2>Login</h2>
-                        <p>Welcome to the official Anime blog.</p>
+                <div class="col-lg-12">
+                    <div class="breadcrumb__links">
+                        <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+                        <a href="./categories.html">Categories</a>
+                        <a href="./anime-details.html">Action</a>
+                        <span>Berserk: Scream Of Face</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Normal Breadcrumb End -->
-
-    <!-- Login Section Begin -->
-    <section class="login spad">
+    </div>
+    <!-- Breadcrumb End -->
+    
+    <!-- Anime Section Begin -->
+    <section class="anime-details spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="login__form">
-                        <h3>Login</h3>
-                        <form action="{{route('proses-masuk')}}" method="post">
-                            @csrf
-                            <div class="input__item">
-                                <input type="text" placeholder="Email address" name="email">
-                                <span class="icon_mail"></span>
-                            </div>
-                            <div class="input__item">
-                                <input type="text" placeholder="Password" name="password">
-                                <span class="icon_lock"></span>
-                            </div>
-                            <button type="submit" class="site-btn">Login Now</button>
-                        </form>
-                        <a href="#" class="forget_pass">Forgot Your Password?</a>
+                <h1>Berserk: Scream Of Face 4</h1>
+                <div class="col-lg-12">
+                    <div class="anime__video__player">
+                        <video id="player" playsinline controls data-poster="./videos/Berserk.jpg">
+                            <source src="videos/1.mp4" type="video/mp4" />
+                            <!-- Captions are optional -->
+                            <track kind="captions" label="English captions" src="#" srclang="en" default />
+                        </video>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="login__register">
-                        <h3>Dont't Have An Account?</h3>
-                        <a href="{{route('daftar')}}" class="primary-btn">Register Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="login__social">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="login__social__links">
-                            <span>or</span>
-                            <ul>
-                                <li><a href="#" class="facebook"><i class="fa fa-facebook"></i> Sign in With
-                                Facebook</a></li>
-                                <li><a href="#" class="google"><i class="fa fa-google"></i> Sign in With Google</a></li>
-                                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i> Sign in With Twitter</a>
-                                </li>
-                            </ul>
+                    <div class="anime__details__episodes">
+                        <div class="section-title">
+                            <h5>List Name</h5>
                         </div>
+                        <a href="./anime-watching.html">Ep 01</a>
+                        <a href="./anime-watching2.html">Ep 02</a>
+                        <a href="./anime-watching3.html">Ep 03</a>
+                        <a class="active" href="./anime-watching4.html">Ep 04</a>
+                        <a href="./anime-watching5.html">Ep 05</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Login Section End -->
+    <!-- Anime Section End -->
 
     <!-- Footer Section Begin -->
     <footer class="footer">
@@ -192,7 +174,6 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-
 
 </body>
 

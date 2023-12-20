@@ -27,8 +27,29 @@ Route::post('/proses-daftar',[RegisterController::class,'proses_daftar'])->name(
 
 Route::middleware('auth')->group(function(){
     Route::get('/home', function () {
-        return view('anime.index');
+        return view('login.index');
     })->name('rumah');
+
+    Route::get('/kategori',function(){
+        return view('login.categories');
+    })->name('kat1');
+
+    Route::get('/categori2',function(){
+        return view('login.categories2');
+    })->name('kat2');
+
+    Route::get('/categori3',function(){
+        return view('anime.categories3');
+    })->name('kat3');
+
+    Route::get('/categori4',function(){
+        return view('login.categories4');
+    })->name('kat4');
+
+    Route::get('/categori5',function(){
+        return view('login.categories5');
+    })->name('kat5');
+
 });
 
 Route::get('/forgot-password',[ForgotPassword::class,'forgot'])->name('lupa-pw');

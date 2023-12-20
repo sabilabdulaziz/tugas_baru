@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="EnterStream">
+    <meta name="description" content="Anime Template">
     <meta name="keywords" content="Anime, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
-    <!-- boostrap icon -->
+    <!-- boostrap css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
     <!-- Css Styles -->
@@ -41,7 +41,7 @@
                 <div class="col-lg-2">
                     <div class="header__logo">
                         <a href="{{route('home')}}">
-                            <img src="img/Logos3.png" alt="Logo" width="175" height="27">
+                            <img src="img/Logos3.png" alt="" width="175" height="27">
                         </a>
                     </div>
                 </div>
@@ -49,16 +49,18 @@
                     <div class="header__nav">
                         <nav class="header__menu mobile-menu">
                             <ul>
-                                <li class="active"><a href="{{route('home')}}">Homepage</a></li>
+                                <li><a href="{{route('home')}}">Homepage</a></li>
                                 <li><a href="{{route('kategori')}}">Categories <span class="arrow_carrot-down"></span></a>
                                     <ul class="dropdown">
-                                        <li><a href="{{route('kategori')}}">Categories</a></li>
-                                        <li><a href="{{route('detil')}}">Anime Details</a></li>
-                                        <li><a href="{{route('tonton')}}">Anime Watching</a></li>
-                                        <li><a href="{{route('detil')}}">Blog Details</a></li>
+                                        <li class="active"><a href="{{route('kategori')}}">Categories</a></li>
+                                        <li><a href="./anime-details.html">Anime Details</a></li>
+                                        <li><a href="./anime-watching.html">Anime Watching</a></li>
+                                        <li><a href="./blog-details.html">Blog Details</a></li>
+                                        <li><a href="./signup.html">Sign Up</a></li>
+                                        <li><a href="./login.html">Login</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="{{route('blog')}}">Our Blog</a></li>
+                                <li><a href="./blog.html">Our Blog</a></li>
                                 <li><a href="#">Contacts</a></li>
                             </ul>
                         </nav>
@@ -67,7 +69,7 @@
                 <div class="col-lg-2">
                     <div class="header__right">
                         <a href="#" class="search-switch"><span class="icon_search"></span></a>
-                        <a href="{{route('login')}}"><span class="icon_profile"></span></a>
+                        <a href="./login.html"><span class="icon_profile"></span></a>
                     </div>
                 </div>
             </div>
@@ -76,75 +78,52 @@
     </header>
     <!-- Header End -->
 
-    <!-- Hero Section Begin -->
-    <section class="hero">
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
         <div class="container">
-            <div class="hero__slider owl-carousel">
-                <div class="hero__items set-bg" data-setbg="img/hero/Berserk.jpg">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <div class="label">Adventure</div>
-                                <h2>Berserk: Scream Of Face</h2>
-                                <p>This ultraviolent fantasy manga is the first in a series about a cursed lone wanderer with a tragic fate and a cast of bio-horror demons...</p>
-                                <a href="{{route('tonton')}}"><span>Watch Now</span> <i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero__items set-bg" data-setbg="img/hero/hero-1.jpg">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <div class="label">Adventure</div>
-                                <h2>Fate / Stay Night: Unlimited Blade Works</h2>
-                                <p>After 30 days of travel across the world...</p>
-                                <a href="#"><span>Watch Now</span> <i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero__items set-bg" data-setbg="img/hero/br.png">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <div class="label">Adventure</div>
-                                <h2>Boruto: Naruto next generations</h2>
-                                <p>Throughout all their adventures, Boruto is determined to make his mark in the ninja world and live outside of his father's shadow.</p>
-                                <a href="#"><span>Watch Now</span> <i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__links">
+                        <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+                        <a href="./categories.html">Categories</a>
+                        <span>Action</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Hero Section End -->
+    </div>
+    <!-- Breadcrumb End -->
 
     <!-- Product Section Begin -->
-    <section class="product spad">
+    <section class="product-page spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="trending__product">
-                        <div class="row">
-                            <div class="col-lg-8 col-md-8 col-sm-8">
-                                <div class="section-title">
-                                    <h4>Trending Now</h4>
+                    <div class="product__page__content">
+                        <div class="product__page__title">
+                            <div class="row">
+                                <div class="col-lg-8 col-md-8 col-sm-6">
+                                    <div class="section-title">
+                                        <h4>Action</h4>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-4">
-                                <div class="btn__all">
-                                    <a href="{{route('detil1')}}" class="primary-btn">View All <span class="arrow_right"></span></a>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="product__page__filter">
+                                        <p>Order by:</p>
+                                        <select>
+                                            <option value="">A-Z</option>
+                                            <option value="">1-10</option>
+                                            <option value="">10-50</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="{{route('detil1')}}"><img src="img/trending/1.png" alt="gambar"></a>
-                                        <div class="ep">9 / 10</div>
+                                    <div class="product__item__pic set-bg" data-setbg="img/popular/1.png">
+                                        <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
                                     </div>
@@ -155,20 +134,18 @@
                                             <li>
                                                 <i class="bi bi-star-fill" style="color:yellow"></i>
                                                 <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
+                                                <i class="bi bi-star-fill"></i>
                                                 <i class="bi bi-star-fill"></i>
                                                 <i class="bi bi-star-fill"></i>
                                             </li>
                                         </ul>
                                         <h5><a href="./anime-details.html">Berserk: Scream Of Face</a></h5>
-
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="#"><img src="img/trending/trend-2.jpg" alt="gambar2"></a>
+                                    <div class="product__item__pic set-bg" data-setbg="img/popular/popular-2.jpg">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -178,171 +155,11 @@
                                             <li>Active</li>
                                             <li>Movie</li>
                                             <li>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color: yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                                <i class="bi bi-star-fill"></i>
-                                            </li>
-                                        </ul>
-                                        <h5><a href="#">Gintama Movie 2: Kanketsu-hen - Yorozuya yo Eien</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="#"><img src="img/trending/trend-3.jpg" alt="gambar3"></a>
-                                        <div class="ep">18 / 18</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <ul>
-                                            <li>Active</li>
-                                            <li>Movie</li>
-                                            <li>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                                <i class="bi bi-star-fill"></i>
-                                            </li>
-                                        </ul>
-                                        <h5><a href="#">Shingeki no Kyojin Season 3 Part 2</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="#"><img src="img/trending/trend-4.jpg" alt="gambar4"></a>
-                                        <div class="ep">18 / 18</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <ul>
-                                            <li>Active</li>
-                                            <li>Movie</li>
-                                            <li>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
                                                 <i class="bi bi-star-fill" style="color:yellow"></i>
                                                 <i class="bi bi-star-fill" style="color:yellow"></i>
                                                 <i class="bi bi-star-fill" style="color:yellow"></i>
                                                 <i class="bi bi-star-fill"></i>
-                                            </li>
-                                        </ul>
-                                        <h5><a href="#">Fullmetal Alchemist: Brotherhood</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="#"><img src="img/trending/trend-5.jpg" alt="gambar5"></a>
-                                        <div class="ep">18 / 18</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <ul>
-                                            <li>Active</li>
-                                            <li>Movie</li>
-                                            <li>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
                                                 <i class="bi bi-star-fill"></i>
-                                            </li>
-                                        </ul>
-                                        <h5><a href="#">Shiratorizawa Gakuen Koukou</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="#"><img src="img/trending/trend-6.jpg" alt="gambar6"></a>
-                                        <div class="ep">18 / 18</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <ul>
-                                            <li>Active</li>
-                                            <li>Movie</li>
-                                            <li>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                            </li>
-                                        </ul>
-                                        <h5><a href="#">Code Geass: Hangyaku no Lelouch R2</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="popular__product">
-                        <div class="row">
-                            <div class="col-lg-8 col-md-8 col-sm-8">
-                                <div class="section-title">
-                                    <h4>Popular Shows</h4>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-4">
-                                <div class="btn__all">
-                                    <a href="#" class="primary-btn">View All <span class="arrow_right"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="#"><img src="img/popular/popular-1.jpg" alt="gambar7"></a>
-                                        <div class="ep">18 / 18</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <ul>
-                                            <li>Active</li>
-                                            <li>Movie</li>
-                                            <li>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                            </li>
-                                        </ul>
-                                        <h5><a href="#">Sen to Chihiro no Kamikakushi</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="#"><img src="img/popular/popular-2.jpg" alt="gambar8"></a>
-                                        <div class="ep">18 / 18</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <ul>
-                                            <li>Active</li>
-                                            <li>Movie</li>
-                                            <li>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow" ></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                                <i class="bi bi-star-fill" ></i>
                                             </li>
                                         </ul>
                                         <h5><a href="#">Kizumonogatari III: Reiket su-hen</a></h5>
@@ -351,8 +168,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="#"><img src="img/popular/popular-3.jpg" alt="gambar8"></a>
+                                    <div class="product__item__pic set-bg" data-setbg="img/popular/popular-3.jpg">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -363,10 +179,10 @@
                                             <li>Movie</li>
                                             <li>
                                                 <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                                <i class="bi bi-star-fill" ></i>
+                                                <i class="bi bi-star-fill" style="color:yellow"></i>
+                                                <i class="bi bi-star-fill" style="color:yellow"></i>
+                                                <i class="bi bi-star-fill" style="color:yellow"></i>
+                                                <i class="bi bi-star-fill"></i>
                                             </li>
                                         </ul>
                                         <h5><a href="#">Shirogane Tamashii hen Kouhan sen</a></h5>
@@ -375,8 +191,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="#"><img src="img/popular/popular-4.jpg" alt="gambar9"></a>
+                                    <div class="product__item__pic set-bg" data-setbg="img/popular/popular-4.jpg">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -388,9 +203,9 @@
                                             <li>
                                                 <i class="bi bi-star-fill" style="color:yellow"></i>
                                                 <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                                <i class="bi bi-star-fill" ></i>
+                                                <i class="bi bi-star-fill" style="color:yellow"></i>
+                                                <i class="bi bi-star-fill" style="color:yellow"></i>
+                                                <i class="bi bi-star-fill"></i>
                                             </li>
                                         </ul>
                                         <h5><a href="#">Rurouni Kenshin: Meiji Kenkaku Romantan</a></h5>
@@ -399,8 +214,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="#"><img src="img/popular/popular-5.jpg" alt="gambar10"></a>
+                                    <div class="product__item__pic set-bg" data-setbg="img/popular/popular-5.jpg">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -409,13 +223,6 @@
                                         <ul>
                                             <li>Active</li>
                                             <li>Movie</li>
-                                            <li>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                            </li>
                                         </ul>
                                         <h5><a href="#">Mushishi Zoku Shou 2nd Season</a></h5>
                                     </div>
@@ -423,8 +230,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="#"><img src="img/popular/popular-6.jpg" alt="gambar11"></a>
+                                    <div class="product__item__pic set-bg" data-setbg="img/popular/popular-6.jpg">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -433,38 +239,14 @@
                                         <ul>
                                             <li>Active</li>
                                             <li>Movie</li>
-                                            <li>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                            </li>
                                         </ul>
                                         <h5><a href="#">Monogatari Series: Second Season</a></h5>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="recent__product">
-                        <div class="row">
-                            <div class="col-lg-8 col-md-8 col-sm-8">
-                                <div class="section-title">
-                                    <h4>Recently Added Shows</h4>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-4">
-                                <div class="btn__all">
-                                    <a href="#" class="primary-btn">View All <span class="arrow_right"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="#"><img src="img/recent/recent-1.jpg" alt="gambar12"></a>
+                                    <div class="product__item__pic set-bg" data-setbg="img/recent/recent-1.jpg">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -473,13 +255,6 @@
                                         <ul>
                                             <li>Active</li>
                                             <li>Movie</li>
-                                            <li>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                            </li>
                                         </ul>
                                         <h5><a href="#">Great Teacher Onizuka</a></h5>
                                     </div>
@@ -487,8 +262,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="#"><img src="img/recent/recent-2.jpg" alt="gambar13"></a>
+                                    <div class="product__item__pic set-bg" data-setbg="img/recent/recent-2.jpg">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -497,13 +271,6 @@
                                         <ul>
                                             <li>Active</li>
                                             <li>Movie</li>
-                                            <li>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow" ></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow" ></i>
-                                            </li>
                                         </ul>
                                         <h5><a href="#">Fate/stay night Movie: Heaven's Feel - II. Lost</a></h5>
                                     </div>
@@ -511,8 +278,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="#"><img src="img/recent/recent-3.jpg" alt="gambar14"></a>
+                                    <div class="product__item__pic set-bg" data-setbg="img/recent/recent-3.jpg">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -521,13 +287,6 @@
                                         <ul>
                                             <li>Active</li>
                                             <li>Movie</li>
-                                            <li>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                            </li>
                                         </ul>
                                         <h5><a href="#">Mushishi Zoku Shou: Suzu no Shizuku</a></h5>
                                     </div>
@@ -535,8 +294,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="#"><img src="img/recent/recent-4.jpg" alt="gambar15"></a>
+                                    <div class="product__item__pic set-bg" data-setbg="img/recent/recent-4.jpg">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -545,13 +303,6 @@
                                         <ul>
                                             <li>Active</li>
                                             <li>Movie</li>
-                                            <li>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                            </li>
                                         </ul>
                                         <h5><a href="#">Fate/Zero 2nd Season</a></h5>
                                     </div>
@@ -559,8 +310,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="#"><img src="img/recent/recent-5.jpg" alt="gambar16"></a>
+                                    <div class="product__item__pic set-bg" data-setbg="img/recent/recent-5.jpg">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -569,13 +319,6 @@
                                         <ul>
                                             <li>Active</li>
                                             <li>Movie</li>
-                                            <li>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                            </li>
                                         </ul>
                                         <h5><a href="#">Kizumonogatari II: Nekket su-hen</a></h5>
                                     </div>
@@ -583,8 +326,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="#"><img src="img/recent/recent-6.jpg" alt="gambar17"></a>
+                                    <div class="product__item__pic set-bg" data-setbg="img/recent/recent-6.jpg">
                                         <div class="ep">18 / 18</div>
                                         <div class="comment"><i class="fa fa-comments"></i> 11</div>
                                         <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -593,179 +335,116 @@
                                         <ul>
                                             <li>Active</li>
                                             <li>Movie</li>
-                                            <li>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                            </li>
                                         </ul>
                                         <h5><a href="#">The Seven Deadly Sins: Wrath of the Gods</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/trend-1.jpg">
+                                        <div class="ep">18 / 18</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">The Seven Deadly Sins: Wrath of the Gods</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/trend-2.jpg">
+                                        <div class="ep">18 / 18</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Gintama Movie 2: Kanketsu-hen - Yorozuya yo Eien</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/trend-3.jpg">
+                                        <div class="ep">18 / 18</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Shingeki no Kyojin Season 3 Part 2</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/trend-4.jpg">
+                                        <div class="ep">18 / 18</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Fullmetal Alchemist: Brotherhood</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/trend-5.jpg">
+                                        <div class="ep">18 / 18</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Shiratorizawa Gakuen Koukou</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/trend-6.jpg">
+                                        <div class="ep">18 / 18</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Code Geass: Hangyaku no Lelouch R2</a></h5>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="live__product">
-                        <div class="row">
-                            <div class="col-lg-8 col-md-8 col-sm-8">
-                                <div class="section-title">
-                                    <h4>Live Action</h4>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-4">
-                                <div class="btn__all">
-                                    <a href="#" class="primary-btn">View All <span class="arrow_right"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="#"><img src="img/live/live-1.jpg" alt="gambar18"></a>
-                                        <div class="ep">18 / 18</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <ul>
-                                            <li>Active</li>
-                                            <li>Movie</li>
-                                            <li>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                            </li>
-                                        </ul>
-                                        <h5><a href="#">Shouwa Genroku Rakugo Shinjuu</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="#"><img src="img/live/live-2.jpg" alt="gambar19"></a>
-                                        <div class="ep">18 / 18</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <ul>
-                                            <li>Active</li>
-                                            <li>Movie</li>
-                                            <li>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color: yellow"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                            </li>
-                                        </ul>
-                                        <h5><a href="#">Mushishi Zoku Shou 2nd Season</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="#"><img src="img/live/live-3.jpg" alt="gambar20"></a>
-                                        <div class="ep">18 / 18</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <ul>
-                                            <li>Active</li>
-                                            <li>Movie</li>
-                                            <li>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                            </li>
-                                        </ul>
-                                        <h5><a href="#">Mushishi Zoku Shou: Suzu no Shizuku</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="#"><img src="img/live/live-4.jpg" alt="gambar21"></a>
-                                        <div class="ep">18 / 18</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <ul>
-                                            <li>Active</li>
-                                            <li>Movie</li>
-                                            <li>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color: yellow"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                            </li>
-                                        </ul>
-                                        <h5><a href="#">The Seven Deadly Sins: Wrath of the Gods</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="#"><img src="img/live/live-5.jpg" alt="gambar22"></a>
-                                        <div class="ep">18 / 18</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <ul>
-                                            <li>Active</li>
-                                            <li>Movie</li>
-                                            <li>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                            </li>
-                                        </ul>
-                                        <h5><a href="#">Fate/stay night Movie: Heaven's Feel - II. Lost</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg">
-                                        <a href="#"><img src="img/live/live-6.jpg" alt="gambar23"></a>
-                                        <div class="ep">18 / 18</div>
-                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
-                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <ul>
-                                            <li>Active</li>
-                                            <li>Movie</li>
-                                            <li>
-                                                <i class="bi bi-star-fill" style="color:yellow"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill" ></i>
-                                            </li>
-                                        </ul>
-                                        <h5><a href="#">Kizumonogatari II: Nekketsu-hen</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="product__pagination">
+                        <a href="{{route('kat1')}}" class="current-page">1</a>
+                        <a href="{{route('kat2')}}">2</a>
+                        <a href="{{route('kat3')}}">3</a>
+                        <a href="{{route('kat4')}}">4</a>
+                        <a href="{{route('kat5')}}">5</a>
+                        <a href="#"><i class="fa fa-angle-double-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-8">
@@ -893,7 +572,7 @@
                 <div class="footer__nav">
                     <ul>
                         <li class="active"><a href="{{route('home')}}">Homepage</a></li>
-                        <li><a href="./categories.html">Categories</a></li>
+                        <li><a href="{{route('kategori')}}">Categories</a></li>
                         <li><a href="./blog.html">Our Blog</a></li>
                         <li><a href="#">Contacts</a></li>
                     </ul>
@@ -930,7 +609,6 @@
 <script src="js/jquery.slicknav.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
-
 
 </body>
 

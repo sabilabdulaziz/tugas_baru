@@ -22,7 +22,6 @@ class RegisterController extends Controller
         'name' => 'required',
         'email' => 'required|email:dns|unique:users',
         'password' => 'required|min:6|max:12',
-        'rtype_password' => 'required|same:password'
 
        ]);
        // ini akhir dari validasi datanya
@@ -39,6 +38,6 @@ class RegisterController extends Controller
       $user = User::create($data);
       //ini akhir dari pengiriman datanya
 
-      return redirect()->route('home');
+      return redirect()->route('rumah');
     }
 }

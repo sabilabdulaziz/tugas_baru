@@ -49,10 +49,10 @@
                     <div class="header__nav">
                         <nav class="header__menu mobile-menu">
                             <ul>
-                                <li class="active"><a href="{{route('home')}}">Homepage</a></li>
-                                <li><a href="{{route('kategori')}}">Categories <span class="arrow_carrot-down"></span></a>
+                                <li class="active"><a href="{{route('rumah')}}">Homepage</a></li>
+                                <li><a href="{{route('kat1')}}">Categories <span class="arrow_carrot-down"></span></a>
                                     <ul class="dropdown">
-                                        <li><a href="{{route('kategori')}}">Categories</a></li>
+                                        <li><a href="{{route('kat1')}}">Categories</a></li>
                                         <li><a href="{{route('detil')}}">Anime Details</a></li>
                                         <li><a href="{{route('tonton')}}">Anime Watching</a></li>
                                         <li><a href="{{route('detil')}}">Blog Details</a></li>
