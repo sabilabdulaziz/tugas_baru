@@ -387,10 +387,12 @@ ol {
 	transition: all, 0.3s;
 }
 
+
 .header__menu ul li .dropdown li {
 	display: block;
 	margin-right: 0;
 }
+
 
 .header__menu ul li .dropdown li a {
 	font-size: 14px;
@@ -2340,4 +2342,37 @@ ol {
 	.anime__review__item__text {
 		padding: 18px 20px 20px;
 	}
+}
+
+
+.drp-h .drp-ico{
+    list-style: none;
+    display: block;
+}
+.drp .drp-item{
+    list-style: none;
+    background-color: white;
+    display: none;
+}
+.drp-h .drp-cio:hover .drp{
+    display: block;
+}
+.drp:hover .drp-item{
+    display: block;
+}
+.drp .drp-item a{
+    width:200PX;
+    padding:8px 12px 5px;
+    color: black;
+    text-align: center;
+
+}
+.drp-h .drp-ico a:hover{
+    color: white;
+    background-color: red;
+}
+.drp .drp-item a:hover{
+    width:180PX;
+    background-color: red;
+    color: white;
 }

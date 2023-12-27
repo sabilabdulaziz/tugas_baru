@@ -121,7 +121,7 @@ Route::middleware('guest')->group(function(){
 
     Route::get('/blog',function(){
         return view('anime.blog');
-    })->name('blog1');
+    })->name('anime');
 
     Route::get('/anime-details',function(){
         return view('anime.anime-details');
@@ -153,5 +153,9 @@ Route::middleware('guest')->group(function(){
     Route::get('/blog-detil',function(){
         return view('anime.blog-details');
     })->name('detil');
+
+    Route::get('/lupa_password',function(){
+        return view('auth.forget-password');
+    })->name('lupa-pw');
 
 });

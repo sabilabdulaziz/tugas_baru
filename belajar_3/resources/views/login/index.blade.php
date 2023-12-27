@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
     <!-- Css Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" type="text/css">
     <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}" type="text/css">
     <link rel="stylesheet" href="{{asset('css/elegant-icons.css')}}" type="text/css">
@@ -66,9 +67,16 @@
                 </div>
                 <div class="col-lg-2">
                     <div class="header__right">
-                        <a href="{{route('login')}}"><span class="icon_profile"></span></a>
+                        <ul class="drp-h">
+                            <li class="drp-ico"><a href="#">p</a>
+                                <ul class="drp">
+                                    <li class="drp-item"><a href="#">edit profil</a></li>
+                                    <li class="drp-item"><a href="#">change password</a></li>
+                                    <li class="drp-item"><a href="#">logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
-                </div>
             </div>
             <div id="mobile-menu-wrap"></div>
         </div>

@@ -104,12 +104,12 @@
                                 <span class="icon_mail"></span>
                             </div>
                             <div class="input__item">
-                                <input type="text" placeholder="Password" name="password">
+                                <input type="password" placeholder="Password" name="password">
                                 <span class="icon_lock"></span>
                             </div>
                             <button type="submit" class="site-btn">Login Now</button>
                         </form>
-                        <a href="#" class="forget_pass">Forgot Your Password?</a>
+                        <a href="{{route('lupa-pw')}}" class="forget_pass">Forgot Your Password?</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
