@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ForgotPassword;
+use App\Http\Controllers\ForgotpasswordController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
@@ -23,9 +24,10 @@ Route::post('/proses-masuk',[LoginController::class,'proses_masuk'])->name('pros
 
 Route::get('/daftar',[RegisterController::class,'daftar'])->name('daftar');
 Route::post('/proses-daftar',[RegisterController::class,'proses_daftar'])->name('proses-daftar');
-
+Route::get('/lupa-pw',[ForgotpasswordController::class,'lupa_pw'])->name('lupa-pw');
 
 Route::middleware('auth')->group(function(){
+    Route::get('/logout',[LoginController::class,'Logout'])->name('logout');
     Route::get('/home', function () {
         return view('login.index');
     })->name('rumah');
@@ -84,7 +86,7 @@ Route::middleware('auth')->group(function(){
 
 });
 
-Route::get('/forgot-password',[ForgotPassword::class,'forgot'])->name('lupa-pw');
+
 
 
 
@@ -154,8 +156,6 @@ Route::middleware('guest')->group(function(){
         return view('anime.blog-details');
     })->name('detil');
 
-    Route::get('/lupa_password',function(){
-        return view('auth.forget-password');
-    })->name('lupa-pw');
+
 
 });

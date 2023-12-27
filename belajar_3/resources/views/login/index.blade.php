@@ -67,12 +67,12 @@
                 </div>
                 <div class="col-lg-2">
                     <div class="header__right">
-                        <ul class="drp-h">
-                            <li class="drp-ico"><a href="#">p</a>
-                                <ul class="drp">
-                                    <li class="drp-item"><a href="#">edit profil</a></li>
-                                    <li class="drp-item"><a href="#">change password</a></li>
-                                    <li class="drp-item"><a href="#">logout</a></li>
+                        <ul>
+                            <li class="a-d"><a href="#">a</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">profil</a></li>
+                                    <li><a href="{{route('lupa-pw')}}">ubah password</a></li>
+                                    <li><a href="{{route('logout')}}">logout</a></li>
                                 </ul>
                             </li>
                         </ul>

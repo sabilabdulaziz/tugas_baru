@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ForgotPassword extends Controller
+class ForgotpasswordController extends Controller
 {
-    public function forgot(){
+    public function lupa_pw(){
         return view('auth.forget-password');
     }
 }

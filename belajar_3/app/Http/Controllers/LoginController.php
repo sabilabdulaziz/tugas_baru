@@ -26,4 +26,9 @@ class LoginController extends Controller
         }
     }
 
+    public function Logout(){
+        auth()->Logout();
+        return redirect()->route('home');
+    }
+
 }
