@@ -159,7 +159,7 @@
                                                 <i class="bi bi-star-fill"></i>
                                             </li>
                                         </ul>
-                                        <h5><a href="./anime-details.html">Berserk: Scream Of Face</a></h5>
+                                        <h5><a href="{{route('detil1')}}">Berserk: Scream Of Face</a></h5>
 
                                     </div>
                                 </div>

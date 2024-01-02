@@ -70,7 +70,7 @@
                         <ul>
                             <li class="a-d"><a href="#">a</a>
                                 <ul class="dropdown">
-                                    <li><a href="#">profil</a></li>
+                                    <li><a href="{{route('profil-menu')}}">profil</a></li>
                                     <li><a href="{{route('lupa-pw')}}">ubah password</a></li>
                                     <li><a href="{{route('logout')}}">logout</a></li>
                                 </ul>

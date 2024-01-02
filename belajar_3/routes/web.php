@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ChangeProfileController;
 use App\Http\Controllers\ForgotPassword;
 use App\Http\Controllers\ForgotpasswordController;
 use App\Http\Controllers\LoginController;
@@ -24,6 +25,7 @@ Route::post('/proses-masuk',[LoginController::class,'proses_masuk'])->name('pros
 
 Route::get('/daftar',[RegisterController::class,'daftar'])->name('daftar');
 Route::post('/proses-daftar',[RegisterController::class,'proses_daftar'])->name('proses-daftar');
+
 Route::get('/lupa-pw',[ForgotpasswordController::class,'lupa_pw'])->name('lupa-pw');
 
 Route::middleware('auth')->group(function(){
@@ -83,6 +85,10 @@ Route::middleware('auth')->group(function(){
     Route::get('/blog-detil',function(){
         return view('login.blog-details');
     })->name('blog-detil');
+
+   Route::get('/profil-menu',[ChangeProfileController::class,'ubah_profil'])->name('profil-menu');
+
+    Route ::post('/profil-menu',[ChangeProfileController::class,'upload_foto'])->name('upload-profil');
 
 });
 
@@ -158,4 +164,12 @@ Route::middleware('guest')->group(function(){
 
 
 
+
+
+
+});
+
+
+Route::get('/cobaan',function(){
+    return view('admin.admin');
 });
