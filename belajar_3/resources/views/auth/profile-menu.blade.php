@@ -15,7 +15,7 @@
     <form action="{{route('upload-profil')}}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="text-center">
-            <img src="{{asset('image/☆.jpeg')}}" class="rounded image rounded-circle" alt="...">
+            <img src="{{asset('')}}" class="rounded image rounded-circle" alt="...">
             <input type="file" class="form-control control" name="photo">
           </div>
 
@@ -23,13 +23,13 @@
             <div class="row">
                 <div class="col">
                     <label for="username" class="form-label">username</label>
-                    <input type="text" value="halo" name="username" class="form-control"id="inputan">
+                    <input type="text"  name="name" class="form-control"id="inputan" value="{{auth()->user()->name}}">
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <label for="username" class="form-label">email</label>
-                    <input type="text" value="halo" name="email" class="form-control email"id="inputan">
+                    <input type="text"  name="email" class="form-control email"id="inputan" value="{{auth()->user()->email}}">
                 </div>
             </div>
 
@@ -45,13 +45,16 @@
                     <input type="submit" class="btn btn-primary" value="update">
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col">
-                    <input type="submit" class="btn btn-danger" value="delete account">
-                </div>
-            </div>
           </div>
+    </form>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        @csrf
+        <div class="row">
+            <div class="col">
+                <input type="submit" class="btn btn-danger" value="delete account">
+            </div>
+        </div>
+
     </form>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
