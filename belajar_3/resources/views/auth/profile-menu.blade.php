@@ -15,7 +15,7 @@
     <form action="{{route('upload-profil')}}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="text-center">
-            <img src="{{asset('')}}" class="rounded image rounded-circle" alt="...">
+            <img src="{{Session::get('photo')}}" class="rounded image rounded-circle" alt="...">
             <input type="file" class="form-control control" name="photo">
           </div>
 

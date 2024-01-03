@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Foundation\Auth\User as AuthUser;
 use Illuminate\Http\File;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ChangeProfileController extends Controller
 {
@@ -25,7 +26,7 @@ class ChangeProfileController extends Controller
         if($request->file('photo')){
 
 
-        return redirect()->route('profile');
+
 
         }
         else{
@@ -41,5 +42,17 @@ class ChangeProfileController extends Controller
         $pengguna->email= $request->email;
         $pengguna->photo = $request->photo;
         $pengguna->update();
+
+        return view('login.index');
+    }
+
+    public function image(){
+        $id = Auth::id();
+        $pengguna = User::find($id);
+        if(!$pengguna){
+            $profileImage = 'img/44.jpg';
+        }
+        return view('auth.profile-menu', compact('profileImage'));
+
     }
 }

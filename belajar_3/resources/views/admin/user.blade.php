@@ -6,17 +6,16 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <title>Streamit - Responsive Bootstrap 4 Admin Dashboard Template</title>
    <!-- Favicon -->
-   <link rel="shortcut icon" href="../assets/images//favicon.ico" />
    <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
    <!--datatable CSS -->
-   <link rel="stylesheet" href="../assets/css/dataTables.bootstrap4.min.css">
+   <link rel="stylesheet" href="{{asset('assets/css/select2-bootstrap4.min.css')}}">
    <!-- Typography CSS -->
-   <link rel="stylesheet" href="../assets/css/typography.css">
+   <link rel="stylesheet" href="{{asset('assets/css/typography.css')}}">
    <!-- Style CSS -->
-   <link rel="stylesheet" href="../assets/css/style.css">
+   <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
    <!-- Responsive CSS -->
-   <link rel="stylesheet" href="../assets/css/responsive.css">
+   <link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}">
 </head>
 <body>
    <!-- loader Start -->
@@ -47,13 +46,13 @@
          <div id="sidebar-scrollbar">
             <nav class="iq-sidebar-menu">
                <ul id="iq-sidebar-toggle" class="iq-menu">
-                  <li><a href="index.html" class="iq-waves-effect">
+                  <li><a href="{{route('dashboard')}}" class="iq-waves-effect">
                      <i class="las la-home iq-arrow-left"></i><span>Dashboard</span></a>
                   </li>
                   <li class="active active-menu">
                      <a href="user.html" class="iq-waves-effect"><i class="las la-user-friends"></i><span>User</span></a>
-                  </li>              
-                  <li><a href="pages-pricing.html" class="iq-waves-effect"><i class="ri-price-tag-line"></i><span>Pricing</span></a></li>                    
+                  </li>
+                  <li><a href="pages-pricing.html" class="iq-waves-effect"><i class="ri-price-tag-line"></i><span>Pricing</span></a></li>
                   <li>
                      <a href="#ui-elements" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="lab la-elementor iq-arrow-left"></i><span>UI Elements</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                      <ul id="ui-elements" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
@@ -108,7 +107,7 @@
                               <li><a href="table-editable.html"><i class="ri-refund-line"></i>Editable Table</a></li>
                            </ul>
                         </li>
-                        
+
                         <li>
                            <a href="#icons" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-list-check"></i><span>Icons</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                            <ul id="icons" class="iq-submenu collapse" data-parent="#ui-elements">
@@ -170,7 +169,7 @@
                            </div>
                         </a>
                      </div>
-                  </div>                  
+                  </div>
                   <div class="iq-search-bar ml-auto">
                      <form action="#" class="searchbox">
                         <input type="text" class="text search-input" placeholder="Search Here...">
@@ -323,10 +322,10 @@
                                  </div>
                               </div>
                            </div>
-                        </li>                       
+                        </li>
                         <li class="line-height pt-3">
                            <a href="#" class="search-toggle iq-waves-effect d-flex align-items-center">
-                              <img src="../assets/images/user/1.jpg" class="img-fluid rounded-circle mr-3" alt="user"> 
+                              <img src="../assets/images/user/1.jpg" class="img-fluid rounded-circle mr-3" alt="user">
                            </a>
                            <div class="iq-sub-dropdown iq-user-dropdown">
                               <div class="iq-card shadow-none m-0">
@@ -335,7 +334,7 @@
                                        <h5 class="mb-0 text-white line-height">Hello Barry Tech</h5>
                                        <span class="text-white font-size-12">Available</span>
                                     </div>
-                                    <a href="profile.html" class="iq-sub-card iq-bg-primary-hover">
+                                    <a href="{{route('profil1')}}" class="iq-sub-card iq-bg-primary-hover">
                                        <div class="media align-items-center">
                                           <div class="rounded iq-card-icon iq-bg-primary">
                                              <i class="ri-file-user-line"></i>
@@ -346,7 +345,7 @@
                                           </div>
                                        </div>
                                     </a>
-                                    <a href="profile-edit.html" class="iq-sub-card iq-bg-primary-hover">
+                                    <a href="{{route('profilMenu')}}" class="iq-sub-card iq-bg-primary-hover">
                                        <div class="media align-items-center">
                                           <div class="rounded iq-card-icon iq-bg-primary">
                                              <i class="ri-profile-line"></i>
@@ -357,7 +356,7 @@
                                           </div>
                                        </div>
                                     </a>
-                                    <a href="account-setting.html" class="iq-sub-card iq-bg-primary-hover">
+                                    <a href="{{route('account-settings')}}" class="iq-sub-card iq-bg-primary-hover">
                                        <div class="media align-items-center">
                                           <div class="rounded iq-card-icon iq-bg-primary">
                                              <i class="ri-account-box-line"></i>
@@ -449,7 +448,7 @@
                                              <td><span class="badge iq-bg-primary">Block</span></td>
                                              <td>12 Jun, 2020</td>
                                              <td>
-                                                <div class="flex align-items-center list-user-action">                                             
+                                                <div class="flex align-items-center list-user-action">
                                                    <a class="iq-bg-success" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i
                                                       class="ri-pencil-line"></i></a>
                                                       <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i
@@ -544,7 +543,7 @@
                                              </div>
                                           </div>
                                           <!-- Wrapper END -->
-                                           
+
                                           <!-- Footer -->
                                           <footer class="iq-footer">
                                              <div class="container-fluid">
@@ -590,6 +589,6 @@
                                           <script src="../assets/js/chart-custom.js"></script>
                                           <!-- Custom JavaScript -->
                                           <script src="../assets/js/custom.js"></script>
- 
+
                                        </body>
                                        </html>

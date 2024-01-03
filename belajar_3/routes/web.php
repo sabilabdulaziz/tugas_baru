@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ChangeProfileController;
 use App\Http\Controllers\ForgotPassword;
 use App\Http\Controllers\ForgotpasswordController;
@@ -170,6 +171,9 @@ Route::middleware('guest')->group(function(){
 });
 
 
-Route::get('/cobaan',function(){
-    return view('admin.admin');
-});
+Route::get('/admin',[AdminController::class,'dashboard'])->name('dashboard');
+Route::get('/user_menu',[AdminController::class,'user_menu'])->name('user_menu');
+Route::get('/profil-min',[AdminController::class,'profil'])->name('profil1');
+Route::get('/profil-menu-min',[AdminController::class,'profil_menu'])->name('profilMenu');
+Route::get('/account-settings',[AdminController::class,'profil_settings'])->name('account-settings');
+

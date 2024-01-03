@@ -49,7 +49,7 @@
                <ul id="iq-sidebar-toggle" class="iq-menu">
                   <li><a href="index.html" class="text-primary"><i class="ri-arrow-right-line"></i><span>Visit site</span></a></li>
                   <li class="active active-menu"><a href="index.html" class="iq-waves-effect"><i class="las la-home iq-arrow-left"></i><span>Dashboard</span></a></li>
-                  <li><a href="user.html" class="iq-waves-effect"><i class="las la-user-friends"></i><span>User</span></a></li>
+                  <li><a href="{{route('user_menu')}}" class="iq-waves-effect"><i class="las la-user-friends"></i><span>User</span></a></li>
                   <li><a href="pages-pricing.html" class="iq-waves-effect"><i class="ri-price-tag-line"></i><span>Pricing</span></a></li>
                   <li>
                      <a href="#ui-elements" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="lab la-elementor iq-arrow-left"></i><span>UI Elements</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
@@ -331,7 +331,7 @@
                                     <h5 class="mb-0 text-white line-height">Hello Barry Tech</h5>
                                     <span class="text-white font-size-12">Available</span>
                                  </div>
-                                 <a href="profile.html" class="iq-sub-card iq-bg-primary-hover">
+                                 <a href="{{route('profil1')}}" class="iq-sub-card iq-bg-primary-hover">
                                     <div class="media align-items-center">
                                        <div class="rounded iq-card-icon iq-bg-primary">
                                           <i class="ri-file-user-line"></i>
@@ -342,7 +342,7 @@
                                        </div>
                                     </div>
                                  </a>
-                                 <a href="profile-edit.html" class="iq-sub-card iq-bg-primary-hover">
+                                 <a href="{{route('profil-menu')}}" class="iq-sub-card iq-bg-primary-hover">
                                     <div class="media align-items-center">
                                        <div class="rounded iq-card-icon iq-bg-primary">
                                           <i class="ri-profile-line"></i>
@@ -353,7 +353,7 @@
                                        </div>
                                     </div>
                                  </a>
-                                 <a href="account-setting.html" class="iq-sub-card iq-bg-primary-hover">
+                                 <a href="{{route('account-settings')}}" class="iq-sub-card iq-bg-primary-hover">
                                     <div class="media align-items-center">
                                        <div class="rounded iq-card-icon iq-bg-primary">
                                           <i class="ri-account-box-line"></i>
